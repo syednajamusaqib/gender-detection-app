@@ -1,7 +1,3 @@
-libsm6
-libxrender1
-libfontconfig1
-libice6
 python3-distutils
 libatlas-base-dev
 libfreetype6-dev
