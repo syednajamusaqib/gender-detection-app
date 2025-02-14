@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<div class="container text-center">
+    <br><br>
+    <h3 class="display-6 fw-bold text-primary">
+        End-to-End Machine Learning Gender Recognition
+    </h3>
+    <p class="lead text-muted">
+        Upload an image, and our AI model will detect faces and predict gender.
+    </p>
+    <hr><br>
+
+    <!-- Demo Section -->
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <h5>Input Image</h5>
+            <img src="/static/images/albert-dera-ILip77SbmOE-unsplash.jpg" class="img-fluid shadow-lg rounded" alt="Original Image">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/arrow.png" class="img-fluid rounded" alt="Original Image">
+        </div>
+        <div class="col-md-4">
+            <h5>Processed Image</h5>
+            <img src="/static/images/processed_image.jpg" class="img-fluid shadow-lg rounded" alt="Predicted Image">
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Model Information -->
+    <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+            <h4 class="fw-bold">How It Works?</h4>
+            <p class="text-muted">
+                Our AI model first detects faces in the uploaded image. Then, using machine learning, it classifies the gender with good accuracy. 
+                The pipeline uses OpenCV for face detection and Eigenfaces/PCA-based model for recognition.
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item"> Face Detection using OpenCV</li>
+                <li class="list-group-item"> Eigenface Feature Extraction</li>
+                <li class="list-group-item"> Gender Classification Model (Male/Female)</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-4">
+        <a href="/app/gender" class="btn btn-primary btn-lg shadow">
+            Try It Now
+        </a>
+    </div>
+
+    <br><br>
+</div>
+
+
+
+{% endblock %}
